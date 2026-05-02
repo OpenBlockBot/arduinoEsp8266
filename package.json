@@ -1,0 +1,58 @@
+{
+  "name": "arduino-esp8266",
+  "version": "1.0.0",
+  "author": "ArthurZheng",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openblock-plugin/arduinoEsp8266.git"
+  },
+  "type": "module",
+  "scripts": {
+    "prepare": "husky",
+    "dev": "npx openblock-registry-cli dev",
+    "build": "npx openblock-registry-cli build",
+    "build:obfuscate": "npx openblock-registry-cli build --obfuscate",
+    "publish": "npx openblock-registry-cli publish",
+    "publish:dry": "npx openblock-registry-cli publish --dry-run",
+    "validate": "npx openblock-registry-cli validate",
+    "i18n:update": "npx openblock-registry-cli i18n update",
+    "lint": "eslint . --ext .js --fix"
+  },
+  "openblock": {
+    "name": "Esp8266",
+    "deviceId": "arduinoEsp8266",
+    "manufactor": "espressif",
+    "learnMore": "https://www.espressif.com/en/products/socs/esp8266",
+    "type": "arduino",
+    "iconURL": "./assets/arduinoEsp8266.png",
+    "description": {
+      "formatMessage": {
+        "id": "arduinoEsp8266.description",
+        "default": "Low-cost Wi-Fi SOC control board."
+      }
+    },
+    "bluetoothRequired": false,
+    "serialportRequired": true,
+    "defaultBaudRate": "76800",
+    "internetConnectionRequired": false,
+    "launchPeripheralConnectionFlow": true,
+    "useAutoScan": false,
+    "connectionIconURL": "./assets/arduinoEsp8266-illustration.svg",
+    "connectionSmallIconURL": "./assets/arduinoEsp8266-small.svg",
+    "main": "./src/arduinoEsp8266.js",
+    "generator": "./src/generator.js",
+    "translations": "./src/translations.js",
+    "toolchains": "arduino-esp8266-esp8266",
+    "programMode": ["upload"],
+    "tags": ["arduino"],
+    "helpLink": "https://wiki.openblock.cc/general-hardware-guidelines/boards/esp8266",
+    "libraries": "./libraries"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.3.0",
+    "eslint-config-scratch": "^5.0.0",
+    "husky": "^9.0.0"
+  }
+}
