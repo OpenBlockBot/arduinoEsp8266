@@ -49,7 +49,7 @@ export default Blockly => {
         return code;
     };
 
-    Blockly.Arduino.arduino_pin_esp8266AttachInterrupt = function (block) {
+    Blockly.Arduino.arduino_pin_attachInterrupt = function (block) {
         const arg0 = block.getFieldValue('PIN') || '2';
         const arg1 = block.getFieldValue('MODE') || 'RISING';
 
@@ -149,6 +149,9 @@ export default Blockly => {
         const code = `toascii(String(${arg0})[0])`;
         return [code, Blockly.Arduino.ORDER_ATOMIC];
     };
+
+    // Legacy generator aliases, kept for backward compatibility.
+    Blockly.Arduino.arduino_pin_esp8266AttachInterrupt = Blockly.Arduino.arduino_pin_attachInterrupt;
 
     return Blockly;
 };

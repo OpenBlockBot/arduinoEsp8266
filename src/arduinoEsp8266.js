@@ -546,9 +546,9 @@ class OpenBlockArduinoEsp8266Device {
                     },
                     '---',
                     {
-                        opcode: 'esp8266AttachInterrupt',
+                        opcode: 'attachInterrupt',
                         text: formatMessage({
-                            id: 'arduinoEsp8266.pins.esp8266AttachInterrupt',
+                            id: 'arduinoEsp8266.pins.attachInterrupt',
                             default: 'attach interrupt pin [PIN] mode [MODE] executes'
                         }),
                         blockType: BlockType.CONDITIONAL,
@@ -581,6 +581,30 @@ class OpenBlockArduinoEsp8266Device {
                             }
                         },
                         programMode: [ProgramModeType.UPLOAD]
+                    },
+                    // Legacy aliases, kept for backward compatibility.
+                    {
+                        opcode: 'esp8266AttachInterrupt',
+                        text: formatMessage({
+                            id: 'arduinoEsp8266.pins.attachInterrupt',
+                            default: 'attach interrupt pin [PIN] mode [MODE] executes'
+                        }),
+                        blockType: BlockType.CONDITIONAL,
+                        arguments: {
+                            PIN: {
+                                type: ArgumentType.STRING,
+                                menu: 'interruptPins',
+                                defaultValue: this.DEFAULT_PWM_AND_INTERRUPT_PIN
+                            },
+                            MODE: {
+                                type: ArgumentType.STRING,
+                                menu: 'interruptMode',
+                                defaultValue: InterrupMode.Rising
+                            }
+                        },
+                        programMode: [ProgramModeType.UPLOAD],
+                        hideFromPalette: true,
+                        func: 'attachInterrupt'
                     }
                 ],
                 menus: {
