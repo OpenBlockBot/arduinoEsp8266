@@ -1,4 +1,4 @@
-const { formatMessage, ArgumentType, BlockType, ProgramModeType, CommonPeripheral } = window.Scratch;
+const { formatMessage, ArgumentType, BlockType, ProgramModeType, ArduinoPeripheral } = window.Scratch;
 
 const PNPID_LIST = [
     // CH340
@@ -46,8 +46,8 @@ const Pins = {
 };
 
 const Level = {
-    High: '1',
-    Low: '0'
+    High: 'HIGH',
+    Low: 'LOW'
 };
 
 const Buadrate = {
@@ -83,7 +83,7 @@ const DataType = {
     String: 'STRING'
 };
 
-class ArduinoEsp8266 extends CommonPeripheral {
+class ArduinoEsp8266 extends ArduinoPeripheral {
     constructor (runtime, deviceId) {
         super(runtime, deviceId, PNPID_LIST, SERIAL_CONFIG, DIVECE_OPT);
     }
@@ -433,12 +433,22 @@ class OpenBlockArduinoEsp8266Device {
         return Promise.resolve();
     }
 
+    setPwmOutput (args) {
+        this._peripheral.setPwmOutput(args.PIN, args.OUT);
+        return Promise.resolve();
+    }
+
     readDigitalPin (args) {
         return this._peripheral.readDigitalPin(args.PIN);
     }
 
     readAnalogPin (args) {
         return this._peripheral.readAnalogPin(args.PIN);
+    }
+
+    setServoOutput (args) {
+        this._peripheral.setServoOutput(args.PIN, args.OUT);
+        return Promise.resolve();
     }
 }
 

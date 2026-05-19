@@ -4,16 +4,64 @@
 export default {
     'interface': {
         'en': {
-            'arduinoEsp8266.description': 'Low-cost Wi-Fi SOC control board.'
+            'arduinoEsp8266.description': 'Low-cost Wi-Fi SOC control board.',
+            'arduinoEsp8266.examples.blink.name': 'Blink',
+            'arduinoEsp8266.examples.blink.description': 'Make the on-board LED blink.',
+            'arduinoEsp8266.examples.button.name': 'Button',
+            'arduinoEsp8266.examples.button.description': 'Light up the LED while a push button is pressed.',
+            'arduinoEsp8266.examples.fade.name': 'Fade',
+            'arduinoEsp8266.examples.fade.description': 'Smoothly fade an LED in and out using PWM.',
+            'arduinoEsp8266.examples.knob.name': 'Knob',
+            'arduinoEsp8266.examples.knob.description': 'Control LED brightness with a potentiometer.',
+            'arduinoEsp8266.examples.servoSweep.name': 'Servo Sweep',
+            'arduinoEsp8266.examples.servoSweep.description': 'Sweep a servo back and forth between 0 and 180 degrees.',
+            'arduinoEsp8266.examples.serialMonitor.name': 'Serial Monitor',
+            'arduinoEsp8266.examples.serialMonitor.description': 'Print analog readings to the Serial Monitor every half second.'
         },
         'ru': {
-            'arduinoEsp8266.description': 'Недорогая плата Wi-Fi  для управления'
+            'arduinoEsp8266.description': 'Недорогая плата Wi-Fi  для управления',
+            'arduinoEsp8266.examples.blink.name': 'Мигание',
+            'arduinoEsp8266.examples.blink.description': 'Заставьте встроенный светодиод мигать.',
+            'arduinoEsp8266.examples.button.name': 'Кнопка',
+            'arduinoEsp8266.examples.button.description': 'Зажигайте светодиод, пока нажата кнопка.',
+            'arduinoEsp8266.examples.fade.name': 'Плавное затухание',
+            'arduinoEsp8266.examples.fade.description': 'Плавное затухание светодиода с помощью ШИМ.',
+            'arduinoEsp8266.examples.knob.name': 'Регулятор',
+            'arduinoEsp8266.examples.knob.description': 'Регулировка яркости светодиода с помощью потенциометра.',
+            'arduinoEsp8266.examples.servoSweep.name': 'Развертка серво',
+            'arduinoEsp8266.examples.servoSweep.description': 'Поворот серво вперед и назад между 0° и 180°.',
+            'arduinoEsp8266.examples.serialMonitor.name': 'Монитор порта',
+            'arduinoEsp8266.examples.serialMonitor.description': 'Печать аналоговых показаний в монитор порта каждые полсекунды.'
         },
         'zh-cn': {
-            'arduinoEsp8266.description': '低功耗 Wi-Fi SOC 控制板。'
+            'arduinoEsp8266.description': '低功耗 Wi-Fi SOC 控制板。',
+            'arduinoEsp8266.examples.blink.name': '闪烁',
+            'arduinoEsp8266.examples.blink.description': '让板载 LED 闪烁。',
+            'arduinoEsp8266.examples.button.name': '按键',
+            'arduinoEsp8266.examples.button.description': '按住按键时点亮 LED。',
+            'arduinoEsp8266.examples.fade.name': '呼吸灯',
+            'arduinoEsp8266.examples.fade.description': '用 PWM 让 LED 缓缓变亮再渐渐变暗。',
+            'arduinoEsp8266.examples.knob.name': '电位器调光',
+            'arduinoEsp8266.examples.knob.description': '用电位器调节 LED 的亮度。',
+            'arduinoEsp8266.examples.servoSweep.name': '舵机来回扫描',
+            'arduinoEsp8266.examples.servoSweep.description': '让舵机在 0° 到 180° 之间来回转动。',
+            'arduinoEsp8266.examples.serialMonitor.name': '串口监视器',
+            'arduinoEsp8266.examples.serialMonitor.description': '每半秒把模拟引脚的数值打印到串口监视器上。'
         },
         'zh-tw': {
-            'arduinoEsp8266.description': '低功耗 Wi-Fi SOC 控制板。'
+            'arduinoEsp8266.description': '低功耗 Wi-Fi SOC 控制板。',
+            'arduinoEsp8266.examples.blink.name': '閃爍',
+            'arduinoEsp8266.examples.blink.description': '讓板載 LED 閃爍。',
+            'arduinoEsp8266.examples.button.name': '按鍵',
+            'arduinoEsp8266.examples.button.description': '按住按鍵時點亮 LED。',
+            'arduinoEsp8266.examples.fade.name': '呼吸燈',
+            'arduinoEsp8266.examples.fade.description': '用 PWM 讓 LED 緩緩變亮再漸漸變暗。',
+            'arduinoEsp8266.examples.knob.name': '電位器調光',
+            'arduinoEsp8266.examples.knob.description': '用電位器調節 LED 的亮度。',
+            'arduinoEsp8266.examples.servoSweep.name': '舵機來回掃描',
+            'arduinoEsp8266.examples.servoSweep.description': '讓舵機在 0° 到 180° 之間來回轉動。',
+            'arduinoEsp8266.examples.serialMonitor.name': '串口監視器',
+            'arduinoEsp8266.examples.serialMonitor.description': '每半秒把類比腳位的數值印出到串口監視器上。'
         }
     },
     'extensions': {
