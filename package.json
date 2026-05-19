@@ -78,7 +78,7 @@
             "default": "Make the on-board LED blink."
           }
         },
-        "file": "./examples/01_blink.ob"
+        "file": "./examples/blink.ob"
       },
       {
         "id": "button",
@@ -94,7 +94,7 @@
             "default": "Light up the LED while a push button is pressed."
           }
         },
-        "file": "./examples/02_button.ob"
+        "file": "./examples/button.ob"
       },
       {
         "id": "fade",
@@ -110,7 +110,7 @@
             "default": "Smoothly fade an LED in and out using PWM."
           }
         },
-        "file": "./examples/03_fade.ob"
+        "file": "./examples/fade.ob"
       },
       {
         "id": "knob",
@@ -126,7 +126,7 @@
             "default": "Control LED brightness with a potentiometer."
           }
         },
-        "file": "./examples/04_knob.ob"
+        "file": "./examples/knob.ob"
       },
       {
         "id": "servoSweep",
@@ -142,7 +142,7 @@
             "default": "Sweep a servo back and forth between 0 and 180 degrees."
           }
         },
-        "file": "./examples/05_servoSweep.ob"
+        "file": "./examples/servoSweep.ob"
       },
       {
         "id": "serialMonitor",
@@ -158,7 +158,7 @@
             "default": "Print analog readings to the Serial Monitor every half second."
           }
         },
-        "file": "./examples/06_serialMonitor.ob"
+        "file": "./examples/serialMonitor.ob"
       }
     ]
   },
