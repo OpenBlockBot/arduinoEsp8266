@@ -48,7 +48,7 @@ const Pins = {
     GPIO14: '14',
     GPIO15: '15',
     GPIO16: '16',
-    A0: 'A0'
+    A0: '17'
 };
 
 const Level = {
@@ -420,7 +420,6 @@ class OpenBlockArduinoEsp8266Device {
     constructor (runtime) {
         this.runtime = runtime;
         this._peripheral = new ArduinoEsp8266(this.runtime, this.DEVICE_ID);
-        this._peripheral.numDigitalPins = 17;
     }
 
     getInfo () {
